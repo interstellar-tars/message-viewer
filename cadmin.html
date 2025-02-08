@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <script defer src="cadmin.js"></script>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+
+    <label>Admin Password:</label>
+    <input type="password" id="adminPassword">
+    <button onclick="authenticate()">Login</button>
+    <p id="authStatus"></p>
+
+    <div id="adminSection" style="display:none;">
+        <h2>Stored Messages</h2>
+        <ul id="messageList"></ul>
+
+        <h2>Site Analytics</h2>
+        <p><b>Messages Created:</b> <span id="messagesCreated">0</span></p>
+        <p><b>Messages Retrieved:</b> <span id="messagesRetrieved">0</span></p>
+    </div>
+</body>
+</html>
